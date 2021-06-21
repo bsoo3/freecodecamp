@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html id="background">
+<style>
+    #background {
+        background-image: linear-gradient(90deg, #363689, #67679f);
+        font-family: Nexa;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #title {
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+    }
+    
+    #description {
+        text-align: center;
+        color: white;
+        font-size: 23px;
+    }
+    
+    #survey-form {
+        background-color: #252545;
+        color: white;
+        margin-left: 11%;
+        margin-right: 11%;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    
+    #name {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+    
+    #email {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+    
+    #number {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+    
+    #name-label {
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 30px;
+    }
+    
+    #email-label {
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 30px;
+    }
+    
+    #number-label {
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 30px;
+    }
+    
+    #recommendation {
+        margin-left: 5%;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    
+    #recommendation-label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 10px;
+    }
+    
+    #option {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+    
+    #option-label {
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 30px;
+    }
+    
+    #feature {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+    
+    #feature-label {
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 30px;
+    }
+    
+    #comment {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+    
+    #comment-label {
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 120px;
+    }
+    
+    #improve {
+        margin-left: 5%;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    
+    #improve-label {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 10px;
+    }
+    
+    #submit {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+    
+    #submit-label {
+        margin-top: 5px;
+        border-radius: 5px;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        background-color: aqua;
+        font-size: 100%;
+    }
+</style>
+
+<head>
+
+    <h1 id="title"> freeCodeCamp Survey Form</h1>
+
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+
+</head>
+
+<body id="survey-form">
+
+    <div>
+
+        <form>
+
+            <div id="name">
+
+                <label for="fname">Name</label><br>
+                <input type="text" id="name-label" name="fname" placeholder="Enter your name"><br>
+
+            </div>
+
+            <div id="email">
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email-label" name="email" placeholder="Enter your Email"><br>
+
+            </div>
+            <div id="number">
+
+                <label for="age"> Age (optional)</label><br>
+                <input type="age" id="number-label" name="age" placeholder="Enter your age"><br>
+
+            </div>
+            <div id="option">
+                <label for="role">Which option best describes your current role?</label><br>
+                <select id="option-label" name="role" placeholder="Select an option"><br>
+                <option value="other">Select current role</option>
+                  <option value="student" id="option-label">Student</option>
+                  <option value="full-time-job">Full Time Job</option>
+                  <option value="full-time-learner">Full Time Learner</option>
+                  <option value="preffer-not">Preffer not to say</option>
+                  <option value="other">other</option>
+                </select>
+            </div>
+            <div id="recommendation">
+
+                <label for="recommendation">Would you recommend freeCodeCamp to a friend?</label><br>
+
+                <input type="radio" id="recommendation-label" name="gender" value="male">
+                <label for="Definitely">Definitely</label><br>
+
+                <input type="radio" id="recommendation-label" name="gender" value="female">
+                <label for="maybe">Maybe</label><br>
+
+                <input type="radio" id="recommendation-label" name="gender" value="other">
+                <label for="not-sure">Not sure</label><br>
+            </div>
+            <div id="feature">
+                <label for="role">What is your favorite feature of freeCodeCamp?</label><br>
+                <select id="feature-label" name="role" placeholder="Select an option"><br>
+                      <option value="student">Student</option>
+                      <option value="full-time-job">Full Time Job</option>
+                      <option value="full-time-learner">Full Time Learner</option>
+                      <option value="preffer-not">Preffer not to say</option>
+                      <option value="other">other</option>
+                    </select>
+            </div>
+
+            <div id="improve">
+                <form>
+                    <label for="like" id="improve-label">What would you like to see improved? (Check all that apply)</label><br>
+                    <input type="checkbox" id="front-end" name="front-end" value="front-end">
+                    <label for="front-end"> Front-end Projects</label><br>
+                    <input type="checkbox" id="Back-end" name="Back-end" value="Back-end">
+                    <label for="Back-end"> Back-end Projects</label><br>
+                    <input type="checkbox" id="Visualization" name="Visualization" value="Visualization">
+                    <label for="Visualization">Data Visualization</label><br>
+                    <input type="checkbox" id="Challenges" name="Challenges" value="Challenges">
+                    <label for="Challenges">Challenges</label><br>
+                    <input type="checkbox" id="Open-Source" name="Open-Source" value="Open-Source">
+                    <label for="Open-Source">Open Source Community</label><br>
+                    <input type="checkbox" id="Gitter" name="Gitter" value="Gitter">
+                    <label for="Gitter">Gitter help rooms</label><br>
+                    <input type="checkbox" id="Videos" name="Videos" value="Videos">
+                    <label for="Videos">Videos</label><br>
+                    <input type="checkbox" id="Meetups" name="Meetups" value="Meetups">
+                    <label for="Meetups">City Meetups</label><br>
+                    <input type="checkbox" id="Wiki" name="Wiki" value="Wiki">
+                    <label for="Wiki">Wiki</label><br>
+                    <input type="checkbox" id="Forum" name="Forum" value="Forum">
+                    <label for="Forum">Forum</label><br>
+                    <input type="checkbox" id="Additional" name="Additional" value="Additional">
+                    <label for="Additional">Additional Courses</label><br>
+                </form>
+            </div>
+
+            <div id="comment">
+                <label for="fname">Any comments or suggestions?</label><br>
+                <input type="text" id="comment-label" name="fname" placeholder="Enter your comment here..."><br>
+            </div>
+        </form>
+        <div id="submit">
+            <input type="submit" value="SUBMIT" id="submit-label">
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+</html>
